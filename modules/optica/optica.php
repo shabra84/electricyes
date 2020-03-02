@@ -1,0 +1,397 @@
+<?php
+/**
+* 2007-2019 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2019 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*/
+
+if (!defined('_PS_VERSION_')) {
+    exit;
+}
+
+class Optica extends Module
+{
+    protected $config_form = false;
+
+    public function __construct()
+    {
+        $this->name = 'optica';
+        $this->tab = 'administration';
+        $this->version = '1.0.0';
+        $this->author = 'Luis Urdaneta';
+        $this->need_instance = 0;
+
+        /**
+         * Set $this->bootstrap to true if your module is compliant with bootstrap (PrestaShop 1.6)
+         */
+        $this->bootstrap = true;
+
+        parent::__construct();
+
+        $this->displayName = $this->l('Optica');
+        $this->description = $this->l('Muestra el formulario de la Optica');
+
+        $this->confirmUninstall = $this->l('');
+
+        $this->ps_versions_compliancy = array('min' => '1.7', 'max' => _PS_VERSION_);
+    }
+
+    /**
+     * Don't forget to create update methods if needed:
+     * http://doc.prestashop.com/display/PS16/Enabling+the+Auto-Update
+     */
+    public function install()
+    {
+        //Configuration::updateValue('OPTICA_LIVE_MODE', false);
+
+        include(dirname(__FILE__).'/sql/install.php');
+
+        return parent::install() &&
+            $this->registerHook('header') &&
+            $this->registerHook('backOfficeHeader') &&
+            $this->registerHook('displayProductTab') &&
+            $this->registerHook('displayProductTab') &&
+            $this->registerHook('displayProductAdditionalInfo') &&
+            $this->registerHook('displayAfterProductThumbs');
+    }
+
+    public function uninstall()
+    {
+        //Configuration::deleteByName('OPTICA_LIVE_MODE');
+
+        include(dirname(__FILE__).'/sql/uninstall.php');
+
+        return parent::uninstall();
+    }
+
+    /**
+     * Load the configuration form
+     */
+    public function getContent()
+    {
+        /**
+         * If values have been submitted in the form, process.
+         */
+        if (((bool)Tools::isSubmit('submitOpticaModule')) == true) {
+            $this->postProcess();
+        }
+
+        $this->context->smarty->assign('module_dir', $this->_path);
+        //echo "aqui vamos";
+        //print_r($_POST);
+        if($_POST['sub']!="")
+        {
+            $data = serialize($_POST);
+            if($_POST['sub']=="1")
+            $insert = "update `" . _DB_PREFIX_ . "optica` set texto = '$data' ";
+            if($_POST['sub']=="2")
+            $insert = "update `" . _DB_PREFIX_ . "optica` set texto2 = '$data' ";
+            if($_POST['sub']=="3")
+            $insert = "update `" . _DB_PREFIX_ . "optica` set texto3 = '$data' ";
+
+            Db::getInstance()->execute($insert);
+        }
+        
+        //saco los datos
+        $u= Db::getInstance()->executeS('
+        SELECT texto, texto2, texto3
+        FROM `' . _DB_PREFIX_ . 'optica`');
+        //echo "parte 2";
+        //print_r($u);
+        $dat=$u[0];
+        //print_r($dat['texto']);
+        $this->context->smarty->assign(array(
+            'texto' => $dat['texto'],
+            'texto2' => $dat['texto2'],
+            'texto3' => $dat['texto3']
+        ));
+
+
+        //$smarty->assign('numeroaleatorio', $aleatorio);
+        $output = $this->context->smarty->fetch($this->local_path.'views/templates/admin/configure.tpl');
+
+        return $output.$this->renderForm();
+    }
+
+    /**
+     * Create the form that will be displayed in the configuration of your module.
+     */
+    protected function renderForm()
+    {
+        $helper = new HelperForm();
+
+        $helper->show_toolbar = false;
+        $helper->table = $this->table;
+        $helper->module = $this;
+        $helper->default_form_language = $this->context->language->id;
+        $helper->allow_employee_form_lang = Configuration::get('PS_BO_ALLOW_EMPLOYEE_FORM_LANG', 0);
+
+        $helper->identifier = $this->identifier;
+        $helper->submit_action = 'submitOpticaModule';
+        $helper->currentIndex = $this->context->link->getAdminLink('AdminModules', false)
+            .'&configure='.$this->name.'&tab_module='.$this->tab.'&module_name='.$this->name;
+        $helper->token = Tools::getAdminTokenLite('AdminModules');
+
+        $helper->tpl_vars = array(
+            'fields_value' => $this->getConfigFormValues(), /* Add values for your inputs */
+            'languages' => $this->context->controller->getLanguages(),
+            'id_language' => $this->context->language->id,
+        );
+
+        return $helper->generateForm(array($this->getConfigForm()));
+    }
+
+    /**
+     * Create the structure of your form.
+     */
+    protected function getConfigForm()
+    {
+        return array(
+            'form' => array(
+                'legend' => array(
+                'title' => $this->l('Settings'),
+                'icon' => 'icon-cogs',
+                ),
+                'input' => array(
+                    array(
+                        'type' => 'switch',
+                        'label' => $this->l('Live mode'),
+                        'name' => 'OPTICA_LIVE_MODE',
+                        'is_bool' => true,
+                        'desc' => $this->l('Use this module in live mode'),
+                        'values' => array(
+                            array(
+                                'id' => 'active_on',
+                                'value' => true,
+                                'label' => $this->l('Enabled')
+                            ),
+                            array(
+                                'id' => 'active_off',
+                                'value' => false,
+                                'label' => $this->l('Disabled')
+                            )
+                        ),
+                    ),
+                    array(
+                        'col' => 3,
+                        'type' => 'text',
+                        'prefix' => '<i class="icon icon-envelope"></i>',
+                        'desc' => $this->l('Enter a valid email address'),
+                        'name' => 'OPTICA_ACCOUNT_EMAIL',
+                        'label' => $this->l('Email'),
+                    ),
+                    array(
+                        'type' => 'password',
+                        'name' => 'OPTICA_ACCOUNT_PASSWORD',
+                        'label' => $this->l('Password'),
+                    ),
+                ),
+                'submit' => array(
+                    'title' => $this->l('Save'),
+                ),
+            ),
+        );
+    }
+
+    /**
+     * Set values for the inputs.
+     */
+    protected function getConfigFormValues()
+    {
+        return array(
+            'OPTICA_LIVE_MODE' => Configuration::get('OPTICA_LIVE_MODE', true),
+            'OPTICA_ACCOUNT_EMAIL' => Configuration::get('OPTICA_ACCOUNT_EMAIL', 'contact@prestashop.com'),
+            'OPTICA_ACCOUNT_PASSWORD' => Configuration::get('OPTICA_ACCOUNT_PASSWORD', null),
+        );
+    }
+
+    /**
+     * Save form data.
+     */
+    protected function postProcess()
+    {
+        $form_values = $this->getConfigFormValues();
+
+        foreach (array_keys($form_values) as $key) {
+            Configuration::updateValue($key, Tools::getValue($key));
+        }
+    }
+
+    /**
+    * Add the CSS & JavaScript files you want to be loaded in the BO.
+    */
+    public function hookBackOfficeHeader()
+    {
+        if (Tools::getValue('module_name') == $this->name) {
+            $this->context->controller->addJS($this->_path.'views/js/back.js');
+            $this->context->controller->addCSS($this->_path.'views/css/back.css');
+        }
+    }
+
+    /**
+     * Add the CSS & JavaScript files you want to be added on the FO.
+     */
+    public function hookHeader()
+    {
+        $this->context->controller->addJS($this->_path.'/views/js/front.js');
+        $this->context->controller->addCSS($this->_path.'/views/css/front.css');
+    }
+
+    public function hookDisplayProductTab()
+    {
+        echo "AQUIIIIIIIIIIIII";
+    }
+
+    public function hookDisplayProductTabContent()
+    {
+        echo "AQUIIIIIIIIIIIII22222";
+    }
+
+
+    
+    public function hookDisplayProductAdditionalInfo()
+    {
+        //echo "11111111";
+        //saco los datos
+        $u= Db::getInstance()->executeS('
+        SELECT texto, texto2, texto3
+        FROM `' . _DB_PREFIX_ . 'optica`');
+        //echo "parte 2";
+        //print_r($u);
+        $dat=$u[0];
+        //genero la lista de precios de "Opciones de Lentes"
+        $u2 = unserialize($dat['texto2']);
+        $u3 = unserialize($dat['texto3']);
+
+        $cantOpcion = $u2['cantOpcion'];
+        $cantOpcion2 = $u3['cantOpcion'];
+        $j=0; $jj=0;
+        for($x=1; $x<=$cantOpcion; $x++)
+        {
+            if($j==0)
+            {
+                if($jj>0)
+                    $list2.="</tr><tr><td colspan='2'>&nbsp;</td></tr>";
+
+                 $list2.="<tr>";
+            }   
+
+            $list2.='<td><input class="radioTab2" prod="'.$u2['op_'.$x].'" price="'.$u2['precio_'.$x].'" type="radio" id="lensoption" name="lensoption" value="op1_'.$x.'"> <span>'.$u2['op_'.$x].' ($'.$u2['precio_'.$x].')</span></td>';
+            
+            $j++;
+            
+            if($j==2)
+                $j=0;
+
+            $jj++;
+        }
+        $list2.="</tr>";
+
+        $j=0; $jj=0;
+        for($x=1; $x<=$cantOpcion2; $x++)
+        {
+            if($j==0)
+            {
+                if($jj>0)
+                    $list3.="</tr><tr><td colspan='2'>&nbsp;</td></tr>";
+
+                 $list3.="<tr>";
+            }   
+
+            $list3.='<td><input class="radioTab3" prod="'.$u3['op_'.$x].'" price="'.$u3['precio_'.$x].'" type="radio" id="tab3" name="tab3" value="op1_'.$x.'"> <span>'.$u3['op_'.$x].' ($'.$u3['precio_'.$x].')</span></td>';
+            
+            $j++;
+            
+            if($j==2)
+                $j=0;
+
+            $jj++;
+        }
+        $list3.="</tr>";
+
+
+        $this->context->smarty->assign(array(
+            'texto' => $dat['texto'],
+            'texto2' => $dat['texto2'],
+            'texto3' => $dat['texto3'],
+            'list2' => $list2,
+            'list3' => $list3,
+            'img1' => $this->_path.'views/img/img1.gif',
+            'img2' => $this->_path.'views/img/img2.gif'
+        ));
+        //agrego las imagenes
+        
+
+
+        //$smarty->assign('numeroaleatorio', $aleatorio);
+        $output = $this->context->smarty->fetch($this->local_path.'views/templates/front/full.tpl');
+
+        return $output;
+    }
+    public function hookDisplayAfterProductThumbs()
+    {
+
+    }
+
+    public function displayAjaxsavecustomdataAction() {        
+        
+      $customData = Tools::getValue('customdata');
+      $idProduct = Tools::getValue('pid'); // for me it's always one
+      $qty=Tools::getValue('qty'); // always add one item
+      $attribute = 74;
+
+       // get cart id if exists
+       if ($this->context->cookie->id_cart)
+       {
+         $cart = new Cart($this->context->cookie->id_cart);
+       }
+
+      // create new cart if needed
+
+      if (!isset($cart) OR !$cart->id)
+      {
+        $cart = new Cart($this->context->cookie->id_cart);
+        $cart->id_customer = (int)($this->context->cookie->id_customer);
+        $cart->id_address_delivery = (int) (Address::getFirstCustomerAddressId($cart->id_customer));
+        $cart->id_address_invoice = $cart->id_address_delivery;
+        $cart->id_lang = (int)($this->context->cookie->id_lang);
+        $cart->id_currency = (int)($this->context->cookie->id_currency);
+        $cart->id_carrier = 1;
+        $cart->recyclable = 0;
+        $cart->gift = 0;
+        $cart->add();
+        $this->context->cookie->id_cart = (int)($cart->id);
+      }
+
+      // get product to add into cart
+        $productToAdd = new Product((int)($idProduct), true, (int)($this->context->cookie->id_lang));
+        $cart->update();
+        $cart = $this->context->cart;
+        $updateQuantity = $cart->updateQty((int)($qty), (int)($idProduct),(int)($attribute), false);
+
+        $cart->update();
+       header('Content-Type: application/json');
+       die(Tools::jsonEncode(['message' => true]));
+       
+      }
+
+}

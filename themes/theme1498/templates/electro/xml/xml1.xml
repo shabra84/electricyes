@@ -1,0 +1,16 @@
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <mxCell id="1-4" value="&lt;img id=&quot;x-1-4&quot; src=&quot;http://www.melopo.com/electro/piezas/piez04.png&quot; width=&quot;127.71428571428572&quot; height=&quot;128.38192419825074&quot;&gt;" style="selectable=1;resizable=1;image=http://www.melopo.com/electro/piezas/piez04.png" vertex="1" parent="1">
+      <mxGeometry x="261.42857142857144" y="466.8367346938776" width="130.71428571428572" height="131.38192419825074" as="geometry"/>
+    </mxCell>
+    <mxCell id="2-3" value="&lt;img id=&quot;x-2-3&quot; src=&quot;http://www.melopo.com/electro/piezas/piez03.png&quot; width=&quot;127.71428571428572&quot; height=&quot;63.69096209912537&quot;&gt;" style="selectable=1;resizable=1;image=http://www.melopo.com/electro/piezas/piez03.png" vertex="1" parent="1">
+      <mxGeometry x="261.42857142857144" y="400.1457725947522" width="130.71428571428572" height="66.69096209912537" as="geometry"/>
+    </mxCell>
+    <mxCell id="3-2" value="&lt;img id=&quot;x-3-2&quot; src=&quot;http://www.melopo.com/electro/piezas/piez02.png&quot; width=&quot;127.71428571428572&quot; height=&quot;63.69096209912537&quot;&gt;" style="selectable=1;resizable=1;image=http://www.melopo.com/electro/piezas/piez02.png" vertex="1" parent="1">
+      <mxGeometry x="261.42857142857144" y="333.4548104956269" width="130.71428571428572" height="66.69096209912537" as="geometry"/>
+    </mxCell>
+    <mxCell id="4-6" value="&lt;img id=&quot;x-4-6&quot; src=&quot;http://www.melopo.com/electro/piezas/piez06.png&quot; width=&quot;127.71428571428572&quot; height=&quot;63.69096209912537&quot;&gt;" style="selectable=1;resizable=1;image=http://www.melopo.com/electro/piezas/piez06.png" vertex="1" parent="1">
+      <mxGeometry x="261.42857142857144" y="266.7638483965015" width="130.71428571428572" height="66.69096209912537" as="geometry"/>
+    </mxCell>
+  </root>

@@ -1,0 +1,20 @@
+*ERROR* 	v1.7.4.3	2019/03/05 - 12:18:44: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and status=0 order by id_user_data desc' at line 3<br /><br /><pre>
+            SELECT *
+            FROM e_user_data
+            where id_user= and status=0 order by id_user_data desc</pre> at line 746 in file classes/db/Db.php
+*ERROR* 	v1.7.4.3	2019/03/05 - 12:19:27: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and status=0 order by id_user_data desc' at line 3<br /><br /><pre>
+            SELECT *
+            FROM e_user_data
+            where id_user= and status=0 order by id_user_data desc</pre> at line 746 in file classes/db/Db.php
+*ERROR* 	v1.7.4.3	2019/03/05 - 12:19:52: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and status=0 order by id_user_data desc' at line 3<br /><br /><pre>
+            SELECT *
+            FROM e_user_data
+            where id_user= and status=0 order by id_user_data desc</pre> at line 746 in file classes/db/Db.php
+*ERROR* 	v1.7.4.3	2019/03/05 - 12:21:26: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and status=0 order by id_user_data desc' at line 3<br /><br /><pre>
+            SELECT *
+            FROM e_user_data
+            where id_user= and status=0 order by id_user_data desc</pre> at line 746 in file classes/db/Db.php
+*ERROR* 	v1.7.4.3	2019/03/05 - 13:28:11: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and status=0 order by id_user_data desc' at line 3<br /><br /><pre>
+            SELECT *
+            FROM e_user_data
+            where id_user= and status=0 order by id_user_data desc</pre> at line 746 in file classes/db/Db.php

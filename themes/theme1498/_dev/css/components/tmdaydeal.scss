@@ -1,0 +1,96 @@
+.daydeal-box {
+	h3 {
+		display: none;
+	}
+	> div {
+		display: flex;
+		height: 50px;
+		padding: 0;
+		> span {
+			margin: 0 4px;
+			padding: 12px 5px 0;
+			background: $gray-lightest;
+			font-size: 11px;
+			text-transform: uppercase;
+			font-weight: 300;
+			text-align: center;
+			width: 50px;
+			height: 50px;
+			display: block;
+			> span {
+				display: block;
+				font-size: 16px;
+				line-height: 16px;
+				font-weight: bold;
+				color: $gray-darker;
+			}
+		}
+	}
+}
+
+#daydeal-products {
+	padding: 175px 0;
+	text-align: center;
+	h1.h1 {
+		font: bold 75px/1 $font-family-base;
+		text-transform: uppercase;
+		color: $gray-darker;
+		border: none;
+		margin-bottom: 60px;
+		@include media-breakpoint-down(md) {
+			font-size: 40px;
+		}
+	}
+	.daydeal-products {
+		.daydeal-products-miniature {
+			h1.product-title {
+				font: 300 36px/1.1 $font-family-base;
+				text-transform: uppercase;
+				padding-bottom: 9px;
+				@include media-breakpoint-down(md) {
+					font-size: 20px;
+				}
+				a {
+					color: $gray-darker;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+			.price, .regular-price, .discount-percentage {
+				display: none;
+			}
+		}
+	}
+	.bx-wrapper .bx-pager {
+		bottom: -70px;
+	}
+	.daydeal-box {
+		> div {
+			height: 100px;
+			justify-content: center;
+			> span {
+				margin: 0 15px;
+				padding: 23px 10px 0;
+				font-size: 14px;
+				width: 100px;
+				height: 100px;
+				background: white;
+				> span {
+					font-size: 35px;
+					line-height: 31px;
+				}
+				@include media-breakpoint-down(md) {
+					font-size: 12px;
+					height: 55px;
+					padding: 5px;
+					margin: 0 5px;
+					> span {
+						font-size: 17px;
+						line-height: 23px;
+					}
+				}
+			}
+		}
+	}
+}

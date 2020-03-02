@@ -1,0 +1,207 @@
+#tmsearch {
+  position: relative;
+  &:not(.open) #tmsearch_result {
+    display: none !important;
+  }
+  #tmsearchbox {
+    label {
+      color: #333333;
+    }
+  }
+
+  .button-search {
+    display: block;
+    width: 50px;
+    text-align: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      color: #888888;
+    }
+  }
+
+  .selector {
+    flex: 1 1 100%;
+  }
+  select {
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6;
+    border: none;
+    option {
+      padding: 5px;
+    }
+  }
+
+  #tm_search_query {
+    display: inline-block;
+    padding: 12px 10px 9px 13px;
+    border: none;
+    background: none;
+    box-shadow: none;
+    flex: 1 1 calc(100% - 50px);
+    height: auto;
+    min-height: 50px;
+  }
+
+  #tmsearch_result {
+    position: absolute;
+    right: calc(100% + .0625rem);
+    top: 100%;
+    background: #fbfbfb;
+    width: 350px;
+    z-index: 10;
+    padding: 15px;
+    font-size: 12px;
+    @include media-breakpoint-down(xs) {
+      width: 20.2rem;
+    }
+    .search-page {
+      overflow: hidden;
+      clear: both;
+    }
+    .tmsearch-row {
+      padding: 15px;
+      margin-top: 30px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      .tmsearch-inner-row {
+        position: relative;
+        img {
+          margin-right: 15px;
+          background: #ffffff;
+          float: left;
+        }
+      }
+      &:first-child {
+        margin: 0;
+      }
+      &:hover {
+        background: white;
+      }
+    }
+    .reference, .quantity, .availability {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 15px 0 0;
+      font-size: 12px;
+      &.availability {
+        text-decoration: underline;
+      }
+      &.quantity {
+        color: #ccc;
+      }
+    }
+    .name {
+      display: block;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: normal;
+      margin: 5px 0;
+      color: $gray-darker;
+      strong {
+        color: black;
+      }
+    }
+
+    .price {
+      color: #333;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      &.new-price {
+        color: red;
+      }
+    }
+    .description-short {
+      display: none;
+    }
+    div > strong {
+      font-weight: normal;
+      color: black;
+    }
+    .manufacturer-name, .supplier-name {
+      float: left;
+      margin-right: 20px;
+      display: block;
+      background: #ffffff;
+      padding: 3px 7px;
+      font-size: 11px;
+      line-height: 15px;
+    }
+
+    &.loading {
+      opacity: 0.5;
+    }
+
+    div.hidden-row, div.hidden-page {
+      display: none;
+    }
+    .pagers {
+      float: right;
+      padding-top: 15px;
+      a {
+        background: #f7f7f7;
+        padding: 5px 10px;
+        margin: 0 3px;
+        display: inline-block;
+        text-decoration: none;
+        &:hover, &.active, &:focus {
+          background: #f1f0f0;
+          color: #000;
+          outline: none;
+        }
+      }
+    }
+    .navigation {
+      float: right;
+      padding-top: 15px;
+      &.top {
+        padding-top: 0;
+        padding-bottom: 15px;
+      }
+      > a {
+        float: left;
+        font-size: 24px;
+        padding: 2px 0;
+        text-decoration: none;
+        &.disabled {
+          cursor: default;
+          color: #cccccc;
+        }
+        &:hover, &.active, &:focus {
+          outline: none;
+        }
+      }
+      .pagers {
+        float: left;
+        padding-top: 10px;
+      }
+      .count-pages {
+        float: left;
+        font-size: 17px;
+        padding: 5px 10px;
+        .current {
+          color: #000000;
+        }
+      }
+    }
+    .tmsearch-alllink {
+      padding-top: 20px;
+      float: left;
+      a {
+        display: block;
+        &:after {
+          font-family: "Material Icons";
+          content: '\E863';
+          font-size: 24px;
+          margin-left: 10px;
+          vertical-align: -8px;
+          color: #85ce90;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>optica</name>
+    <displayName><![CDATA[Optica]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Muestra el formulario de la Optica]]></description>
+    <author><![CDATA[Luis Urdaneta]]></author>
+    <tab><![CDATA[administration]]></tab>
+	<confirmUninstall><![CDATA[]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

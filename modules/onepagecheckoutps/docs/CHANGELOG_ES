@@ -1,0 +1,142 @@
+CHANGELOG - R.154
+
+[ADD] = Adiciones de funcionalidades
+[MOD] = Modificaciones y actualizaciones
+[FIX] = Correccion de problemas o errores (Bugs)
+
+V1.1.8 (08/09/2018)
+[+] ADD: Opcion de redirigir directamente al checkout sin pasar por el carrito.
+[+] ADD: Compatibilidad con modulo Braintree, v3.1.1 - Bellini Services.
+[+] ADD: Se anade hook additionalCustomerFormFields.
+[+] ADD: Se ordena direcciones por fecha de creacion descendente.
+[*] MOD: Se modifica el modulo para que cuando se edita una direccion que no esta seleccionada, no vuelva a cargar metodos de envio y pago.
+[-] FIX: Se elimina cookie de la opcion (Deseo configurar otra direccion para mi facturacion), ya que causaba problema al realizar un segunda pedido (No guardaba direccion de envio, solo facturacion).
+[-] FIX: Se muestran correctamente las direcciones cuando el formulario no tiene codigo postal o ciudad.
+[-] FIX: Ocasionaba error por address1 invalido, cuando se pegaba direccion con caracteres especiales no validos.
+[-] FIX: Se limpiaban los campos personalizados al presionar en editar y atras de las tarjetas de direccion.
+[-] FIX: Al cambiar mas de tres veces el metodo de pago, el anterior quedaba seleccionado y no cambiaba.
+[-] FIX: Se soluciona bug, no mostraba loading en moviles.
+[-] FIX: Al eliminar direcciones desde las tarjetas del OPC se eliminaba direccion de la base de datos ocasionando que no se visualizaran los pedidos que contubieran esa direccion.
+[-] FIX: Actualiza compatibilidad con paypal, v7.4.2.0 - AlabazWeb Pro.
+[-] FIX: Se soluciona bug, cuando un cliente invitado va a pagar y se devuelve al checkout pide aceptar politicas de privacidad pero no se muestra checkbox.
+
+V1.1.7 (28/07/2018)
+[-] FIX: Al guardar direcciones desde el Front o Back generaba un error.
+[-] FIX: Ahora muestra los mensajes de pedido en el resumen cuando tienen informacion previamente guardada.
+
+V1.1.6 (26/07/2018)
+[-] FIX: Problema con puntos en la direccion cuando se hace login desde el prestashop nativo y se crea un pedido.
+[-] FIX: No permitia seleccionar una direccion de facturacion.
+[-] FIX: Problema al comprar productos virtuales sin tener activo las direcciones de facturacion y envio.
+[-] FIX: Al tener desactivado el campo pais y usar el auto-completar de google, no se seleccionaba el estado.
+[-] FIX: La opcion de confirmar direccion de envio no estaba funcionando.
+
+V1.1.5 (18/07/2018)
+[+] ADD: Compatibilidad con modulo "MegaProduct" v17.0.1.1 - alabazweb.com.
+[*] MOD: Mejora visual en la carga de los pasos, ahora muestra un solo loading.
+[*] MOD: Ya no se re-utilizan direcciones creadas por el OPC, para evitar posibles problema de cruce de informacion.
+[-] FIX: Se soluciona problema de compatibilidad con el calculo del fee del modulo "codfee".
+[-] FIX: Problema al procesar pedidos con total: 0.
+[-] FIX: Se quita redirección al checkout cuando se entra al carrito.
+[-] FIX: Al crear la primer direccion de facturacion, daba problema pues dejaba puesta la direccion de envio como facturacion.
+
+V1.1.4 (20/06/2018)
+[*] MOD: Cambio en el manejo de los overrides.
+
+V1.1.2 & V1.1.3 (18/06/2018)
+[+] ADD: Compatibilidad con modulo "VatNumberCleaner" v1.2.8 - MassoVincent.
+[+] ADD: Compatibilidad con modulo "M4GDPR" v1.2.1 - PrestaAddons.
+[+] ADD: Compatibilidad con modulo "Quantity Discount Pro".
+[*] MOD: Ahora se hace distinsion entre las direcciones de facturacion y envio en el checkout.
+[*] MOD: Mejora de compatibilidad con modulo Carrier Pickup Store.
+[*] MOD: Se aplican menores cambios visuales y compatibilidades con otras plantillas.
+[*] MOD: Solo muestra el aceptar politicas de privacidad si no se esta logueado o es un invitado.
+[-] FIX: Se soluciona un problema cuando no tenia direcciones el cliente.
+[-] FIX: Se soluciona bug mostraba mensaje de provincia requerida en ingles siempre.
+[-] FIX: Se soluciona bug cuando los campos adicionales estaban requeridos no dejaba guardar la direccion de entrega.
+[-] FIX: Se soluciona problema de contenedor en la búsqueda de direcciones, no dejaba añadir nueva direccion en moviles.
+[-] FIX: Se soluciona bug duplicaba el mostrar el hook create account top.
+
+V1.1.0 & V1.1.1 (25/05/2018)
+[+] ADD: COMPATIBILIDAD CON MODULO: Official GDPR compliance v1.0.0 - PrestaShop.
+[+] ADD: Permite agregar un label abajo de cada campo de registro para dar mas informacion en caso de ser necesario.
+[+] ADD: Al eliminar todos los productos del carrito se refresca la pagina para mostrar el mensaje de carrito vacio.
+[*] MOD: Optimizacion del manejo de direcciones.
+[*] MOD: Se aplican mejoras y cambios de la version 1.6.
+[*] MOD: Muestra las disponibilidades personalizadas de los productos en el resumen de carrito.
+[*] MOD: Se actualiza traduccion al Holandes.
+[-] FIX: Al ocultar las imagenes y descripciones de los transportes, no se mostraba el precio del transporte.
+[-] FIX: No cambia el color del transporte seleccionado, quedando siempre el por defecto.
+[-] FIX: Se mostraban transportes no correspondientes al pais y estado auto-seleccionado. Solo pasaba con visitantes.
+[-] FIX: Problema en cambiar los colores de las tarjetas de las direcciones seleccionadas.
+[-] FIX: No se podia cambiar la opcion de compra invitado desde la configuración.
+
+V1.0.9 (19/04/2018)
+[-] FIX: Notice al ir al checkout cuando estan los campos deshabilitados de la direccion de entrega o facturacion.
+[-] FIX: Soluciona problema con Google Analitycs.
+[+] ADD: Ahora son mostradas las personalizaciones del producto en el resumen.
+[+] ADD: Se eliminan espacios vacios al inicio y final de las casillas de texto que pueden causar problemas al validar el formulario.
+[+] ADD: Compatibilidad con modulo de pago CodFee (IdNovate).
+[+] ADD: Compatibilidad con modulo de pago Amazon Pay - Login and Pay with Amazon (amzpayments - v3.2.01 - Patworx Multimedia )
+[+] ADD: Compatibilidad con modulo de pago PayPal DIRECT XO (paypalplus - v1.2.0  -  PixelWeb)
+[*] MOD: Se actualizan guias de usuario.
+[*] MOD: Mejoras en el idioma EN y RU.
+[*] MOD: Ahora muestra los totales de impuestos. Esto depende de la version 1.7 instalada.
+
+V1.0.8 (22/03/2018)
+[+] ADD: Compatibilidad con modulo de pago PaypalBrainTree (v1.0.1 - WebDevOverture).
+[+] ADD: Implementacion de PrestaTrust.
+[-] FIX: No era mostrada la flecha de las listas desplegables.
+
+V1.0.6 & 1.0.7 (17/03/2018)
+[-] FIX: Compatibilidad con PrestaShop 1.7.3. Siempre colocaba el transportista por defecto independiente de lo que el cliente hubiera seleccionado.
+[+] ADD: Compatibilidad con modulo de pago PaypalWithFee (v4.0.10 - 4webs.es).
+[+] ADD: Compatibilidad con modulo de pago Stripe Official (v1.5.2 - 202 ecommerce).
+[+] ADD: Compatibilidad con modulo de pago ReembolsoCargo (v4.0.1 - 4webs.es).
+[-] FIX: No mostraba la linea de wrapping en el resumen de carrito.
+[-] FIX: Con la opcion activa de mostrar primero el carrito y hacer clic en "guardar informacion" devolvi al cliente al carrito en vez de mantenerlo en el checkout.
+
+V1.0.5 (01/18/2018)
+[+] ADD: Compatibilidad con modulo Attribute Wizar Pro.
+[-] FIX: Al desactivar el hook shopping cart se seguian mostrando los modulos de ese hook en resumen de carrito.
+[-] FIX: Mostraba siempre el carrito primero antes del checkout.
+[-] FIX: Al refrescar los pagos ocultaba el contenido del pago seleccionado.
+[-] FIX: Problema detectado con la compatibilidad del metodo de pago Stripe Official.
+[-] FIX: Mostraba el requerir politica de privacidad en el registro y no se mostraba. Solo sucede al usar el registro de nuestro checkout en vez del nativo de prestashop.
+[-] FIX: Al activar el importe minimo de compra daba problema con la redireccion al checkout.
+
+V1.0.4 (01/12/2017)
+[+] ADD: Compatibilidad con modulo de pago MegaReembolso (v2.9.2 - AlabazWeb Pro).
+[+] ADD: Compatibilidad con modulo de pago Paypal (v7.4.2.0 - AlabazWeb Pro).
+[+] ADD: Compatibilidad con modulo de pago Stripe Official (v1.5.1 - 202 ecommerce).
+[-] FIX: Cuando se tiene solo un metodo de pago y este hace peticiones post, no funcionaba.
+
+V1.0.3 (23/11/2017)
+[+] ADD: Compatibilidad con modulo de pago BraintreeJS (v3.0.5 - Bellini Services).
+[+] ADD: Validacion online del RUT chileno.
+[*] MOD: La aceptacion el aceptar las politicas de privacidad junto con los terminos y condiciones para hacer compatible nuestro modulo con las leyes de varios paises.
+[*] MOD: Se actualizan idiomas.
+[-] FIX: Optimizacion del manejo de direcciones.
+[-] FIX: Problema al calcular el valor restante para el envio gratuito en diferentes divisas.
+
+V1.0.2 (06/11/2017)
+[+] ADD: Compatibilidad con modulo de pago Paypal con opcion Braintree.
+[+] ADD: Compatibilidad con modulo de pago CashOnDeliveryPlus con Recargo (v2.9.5 - PrestaHost.eu).
+[+] ADD: Compatibilidad con modulo de transporte Packetery (v2.0.2 - ZLab Solutions).
+[+] ADD: Compatibilidad con modulo Customers Activation.
+[+] ADD: Compatibilidad con modulo Rg_Chilexpress (v.1.4.0 - Rolige).
+[+] ADD: Ahora es posible reemplazar el registro nativo por el del modulo.
+[-] FIX: Al hacer clic en la imagen del transporte o la descripcion, no seleccionaba dicho transporte.
+[-] FIX: Si no mostraba transportes se mostraba en el resumen gastos de envio.
+
+V1.0.1 (10/10/2017)
+[+] ADD: Muestra los descuentos de los productos en el resumen de carrito. (Solo para versiones superiores a PrestaShop 1.7.2.X)
+[+] ADD: Compatibilidad con modulo "KurirQ" (v1.0.4 Prestanesia).
+[-] FIX: No se estaba guardando los mensajes de los pedidos. (Solo para versiones superiores a PrestaShop 1.7.2.X).
+[-] FIX: Problema cuando se tenia activo la compra por invitado.
+[-] FIX: Al requerir la direccion de facturacion y no completar los campos, daba problemas visuales.
+[-] FIX: Se vuelve a dejar el header y footer en la pagina de compra.
+[-] FIX: Siempre era requerido el DNI asi el pais ya no lo requiera.
+
+V1.0.0
+- Nueva version para PrestaShop 1.7

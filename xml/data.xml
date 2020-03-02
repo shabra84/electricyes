@@ -1,0 +1,154 @@
+<?xml version="1.0"?><mxGraphModel><root>
+
+  
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <mxCell id="1-154" value="&lt;img  name=&quot;Interruptor Automatico&quot; id=&quot;x-1-154&quot; src=&quot;https://electricyes.es/274/image_154.jpg&quot; width=&quot;224.85714285714286&quot; height=&quot;113.25364431486881&quot;&gt;" style="selectable=1;resizable=1;image=https://electricyes.es/274/image_154.jpg" parent="1" vertex="1" page="1" conexiones="4*0*4*0" interruptor="1">
+      <mxGeometry x="236.3571428571429" y="482.26093294460645" width="227.85714285714286" height="116.25364431486881" as="geometry"/>
+    </mxCell>
+    <mxCell id="i1-1-154" value="-Q1" style="fontSize=8;strokeColor=none;fillColor=#FFFFFF;resizable=0;autosize=1;" parent="1-154" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="5" y="-25" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="i2-1-154" value="63 A" style="fontSize=6;strokeColor=none;fillColor=#FFFFFF;resizable=0;autosize=1;" parent="1-154" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="7" y="-15" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="i3-1-154" value="curva C" style="fontSize=5;strokeColor=none;fillColor=#FFFFFF;resizable=0;autosize=1;" parent="1-154" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="10" y="-5" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="i4-1-154" value="6 Ka" style="fontSize=6;strokeColor=none;fillColor=#FFFFFF;resizable=0;autosize=1;" parent="1-154" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="5" y="5" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="i5-1-154" value="" style="fontSize=6;strokeColor=none;fillColor=#FFFFFF;resizable=0;autosize=1;" parent="1-154" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="17" y="20" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="2-156" value="&lt;img  name=&quot;Interruptor Diferencial&quot; id=&quot;x-2-156&quot; src=&quot;https://electricyes.es/277/image_156.jpg&quot; width=&quot;224.85714285714286&quot; height=&quot;113.25364431486881&quot;&gt;" style="selectable=1;resizable=1;image=https://electricyes.es/277/image_156.jpg" parent="1" vertex="1" page="1" conexiones="4*0*4*0" interruptorD="1">
+      <mxGeometry x="472.7142857142857" y="723.5145772594752" width="227.85714285714286" height="116.25364431486881" as="geometry"/>
+    </mxCell>
+    <mxCell id="i1-2-156" value="-Q2" style="fontSize=8;strokeColor=none;fillColor=#FFFFFF;resizable=0;autosize=1;" parent="2-156" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="5" y="-25" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="i2-2-156" value="40A" style="fontSize=6;strokeColor=none;fillColor=#FFFFFF;resizable=0;autosize=1;" parent="2-156" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="7" y="-15" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="i3-2-156" value="300 mA" style="fontSize=5;strokeColor=none;fillColor=#FFFFFF;resizable=0;autosize=1;" parent="2-156" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="10" y="-5" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="i4-2-156" value="AC" style="fontSize=5;strokeColor=none;fillColor=#FFFFFF;resizable=0;autosize=1;" parent="2-156" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="5" y="5" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="i5-2-156" value="" style="fontSize=6;strokeColor=none;fillColor=#FFFFFF;resizable=0;autosize=1;" parent="2-156" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="17" y="20" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="3-58" value="&lt;img  name=&quot;Borneros 4 bornas&quot; id=&quot;x-3-58&quot; src=&quot;https://electricyes.es/90/image_58.jpg&quot; width=&quot;224.85714285714286&quot; height=&quot;227.50728862973762&quot;&gt;" style="selectable=1;resizable=1;image=https://electricyes.es/90/image_58.jpg" parent="1" vertex="1" page="1" conexiones="4*0*0*0" bornero="1">
+      <mxGeometry y="813.7755102040817" width="227.85714285714286" height="230.50728862973762" as="geometry"/>
+      <Array as="formValue">
+        <add value="77"/>
+        <add value="84"/>
+        <add value="89"/>
+        <add value="99"/>
+        <add value="101"/>
+      </Array>
+    </mxCell>
+    <mxCell id="b1-3-58" value="-X1" style="fontSize=8;strokeColor=none;fillColor=#FFFFFF;resizable=0;autosize=1;" parent="3-58" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="32" y="-19" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="b2-3-58" value="-P1" style="fontSize=8;strokeColor=none;fillColor=#FFFFFF;resizable=0;autosize=1;" parent="3-58" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="113" y="-23" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="b3-3-58" value="-W1" style="fontSize=8;strokeColor=none;fillColor=#FFFFFF;resizable=0;autosize=1;rotation=270" parent="3-58" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="5" y="-19" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="b4-3-58" value="VV-K 1G0.5" style="fontSize=8;strokeColor=none;fillColor=#FFFFFF;resizable=0;autosize=1;rotation=270" parent="3-58" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="16" y="-26" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="b5-3-58" style="fontSize=8;strokeColor=none;fillColor=#FFFFFF;resizable=0;autosize=1;" parent="3-58" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="47" y="47" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="b6-3-58" value="0.5" style="fontSize=0;strokeColor=none;fillColor=#FFFFFF;resizable=0; display=none; autosize=1;" parent="3-58" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="47" y="47" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="b7-3-58" value="VV-K**Resorte**1**G**0.5**undefined" style="fontSize=0;strokeColor=none;fillColor=#FFFFFF;resizable=0; display=none; autosize=1;" parent="3-58" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="47" y="47" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="4-58" value="&lt;img  name=&quot;Borneros 4 bornas&quot; id=&quot;x-4-58&quot; src=&quot;https://electricyes.es/90/image_58.jpg&quot; width=&quot;224.85714285714286&quot; height=&quot;227.50728862973762&quot;&gt;" style="selectable=1;resizable=1;image=https://electricyes.es/90/image_58.jpg" parent="1" vertex="1" page="1" conexiones="4*0*0*0" bornero="1">
+      <mxGeometry x="227.85714285714286" y="813.7755102040817" width="227.85714285714286" height="230.50728862973762" as="geometry"/>
+      <Array as="formValue">
+        <add value="76"/>
+        <add value="82"/>
+        <add value="89"/>
+        <add value="99"/>
+        <add value="101"/>
+      </Array>
+    </mxCell>
+    <mxCell id="b1-4-58" value="-X2" style="fontSize=8;strokeColor=none;fillColor=#FFFFFF;resizable=0;autosize=1;" parent="4-58" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="32" y="-19" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="b2-4-58" value="-P2" style="fontSize=8;strokeColor=none;fillColor=#FFFFFF;resizable=0;autosize=1;" parent="4-58" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="113" y="-23" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="b3-4-58" value="-W2" style="fontSize=8;strokeColor=none;fillColor=#FFFFFF;resizable=0;autosize=1;rotation=270" parent="4-58" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="5" y="-19" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="b4-4-58" value="RV 1G0.5" style="fontSize=8;strokeColor=none;fillColor=#FFFFFF;resizable=0;autosize=1;rotation=270" parent="4-58" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="16" y="-26" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="b5-4-58" style="fontSize=8;strokeColor=none;fillColor=#FFFFFF;resizable=0;autosize=1;" parent="4-58" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="47" y="47" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="b6-4-58" value="0.5" style="fontSize=0;strokeColor=none;fillColor=#FFFFFF;resizable=0; display=none; autosize=1;" parent="4-58" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="47" y="47" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="b7-4-58" value="RV**Por Tornillo**1**G**0.5**undefined" style="fontSize=0;strokeColor=none;fillColor=#FFFFFF;resizable=0; display=none; autosize=1;" parent="4-58" vertex="1">
+      <mxGeometry y="0.5" width="10" height="10" relative="1" as="geometry">
+        <mxPoint x="47" y="47" as="offset"/>
+      </mxGeometry>
+    </mxCell>
+  
+
+</root></mxGraphModel>

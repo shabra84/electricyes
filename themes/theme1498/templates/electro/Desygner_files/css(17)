@@ -1,0 +1,1080 @@
+/* latin */
+@font-face {
+  font-family: 'Special Elite';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Special Elite Regular'), local('SpecialElite-Regular'), url(https://fonts.gstatic.com/s/specialelite/v8/XLYgIZbkc4JPUL5CVArUVL0ntnAOSA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* telugu */
+@font-face {
+  font-family: 'Sree Krushnadevaraya';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sree Krushnadevaraya'), local('SreeKrushnadevaraya'), url(https://fonts.gstatic.com/s/sreekrushnadevaraya/v5/R70FjzQeifmPepmyQQjQ9kvwMkWYPfTA_HWA0llguQ.woff2) format('woff2');
+  unicode-range: U+0951-0952, U+0964-0965, U+0C00-0C7F, U+1CDA, U+200C-200D, U+25CC;
+}
+/* latin */
+@font-face {
+  font-family: 'Sree Krushnadevaraya';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sree Krushnadevaraya'), local('SreeKrushnadevaraya'), url(https://fonts.gstatic.com/s/sreekrushnadevaraya/v5/R70FjzQeifmPepmyQQjQ9kvwMkWYPfTA_HWc0lk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Sriracha';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sriracha'), local('Sriracha-Regular'), url(https://fonts.gstatic.com/s/sriracha/v2/0nkrC9D4IuYBgWcI9NbLTwHSoQ.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Sriracha';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sriracha'), local('Sriracha-Regular'), url(https://fonts.gstatic.com/s/sriracha/v2/0nkrC9D4IuYBgWcI9NbQTwHSoQ.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Sriracha';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sriracha'), local('Sriracha-Regular'), url(https://fonts.gstatic.com/s/sriracha/v2/0nkrC9D4IuYBgWcI9NbRTwHSoQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Sriracha';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sriracha'), local('Sriracha-Regular'), url(https://fonts.gstatic.com/s/sriracha/v2/0nkrC9D4IuYBgWcI9NbfTwE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Stalemate';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Stalemate'), local('Stalemate-Regular'), url(https://fonts.gstatic.com/s/stalemate/v5/taiIGmZ_EJq97-UfkZRZs66twZQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Stalemate';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Stalemate'), local('Stalemate-Regular'), url(https://fonts.gstatic.com/s/stalemate/v5/taiIGmZ_EJq97-UfkZRZva6t.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Stalinist One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Stalinist One'), local('StalinistOne-Regular'), url(https://fonts.gstatic.com/s/stalinistone/v10/MQpS-WezM9W4Dd7D3B7I-UT7SZyePhac.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Stalinist One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Stalinist One'), local('StalinistOne-Regular'), url(https://fonts.gstatic.com/s/stalinistone/v10/MQpS-WezM9W4Dd7D3B7I-UT7SZaePhac.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Stalinist One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Stalinist One'), local('StalinistOne-Regular'), url(https://fonts.gstatic.com/s/stalinistone/v10/MQpS-WezM9W4Dd7D3B7I-UT7SZiePg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Stint Ultra Expanded';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Stint Ultra Expanded'), local('StintUltraExpanded-Regular'), url(https://fonts.gstatic.com/s/stintultraexpanded/v5/CSRg4yNNh-GbW3o3JkwoDcdvMKMf0oBAd3qhCzUUWw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Stint Ultra Expanded';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Stint Ultra Expanded'), local('StintUltraExpanded-Regular'), url(https://fonts.gstatic.com/s/stintultraexpanded/v5/CSRg4yNNh-GbW3o3JkwoDcdvMKMf0oBAd3qvCzU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Stoke';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Stoke Light'), local('Stoke-Light'), url(https://fonts.gstatic.com/s/stoke/v7/z7NXdRb7aTMfKNvFVjxL9JnsTQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Stoke';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Stoke Light'), local('Stoke-Light'), url(https://fonts.gstatic.com/s/stoke/v7/z7NXdRb7aTMfKNvFVjxF9Jk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Stoke';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Stoke Regular'), local('Stoke-Regular'), url(https://fonts.gstatic.com/s/stoke/v7/z7NadRb7aTMfKNNgdCl61Q.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Stoke';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Stoke Regular'), local('Stoke-Regular'), url(https://fonts.gstatic.com/s/stoke/v7/z7NadRb7aTMfKNNudCk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Suez One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Suez One'), local('SuezOne-Regular'), url(https://fonts.gstatic.com/s/suezone/v2/taiJGmd_EZ6rqscQgOFMmouQ-A.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Suez One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Suez One'), local('SuezOne-Regular'), url(https://fonts.gstatic.com/s/suezone/v2/taiJGmd_EZ6rqscQgOFAmouQ-A.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Suez One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Suez One'), local('SuezOne-Regular'), url(https://fonts.gstatic.com/s/suezone/v2/taiJGmd_EZ6rqscQgOFOmos.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Sumana';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sumana'), local('Sumana-Regular'), url(https://fonts.gstatic.com/s/sumana/v2/4UaDrE5TqRBjGj-29hLj36w.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Sumana';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sumana'), local('Sumana-Regular'), url(https://fonts.gstatic.com/s/sumana/v2/4UaDrE5TqRBjGj-2-RLj36w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Sumana';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sumana'), local('Sumana-Regular'), url(https://fonts.gstatic.com/s/sumana/v2/4UaDrE5TqRBjGj-29xLj.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Sumana';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Sumana Bold'), local('Sumana-Bold'), url(https://fonts.gstatic.com/s/sumana/v2/4UaArE5TqRBjGj--TDf24Y3M2po.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Sumana';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Sumana Bold'), local('Sumana-Bold'), url(https://fonts.gstatic.com/s/sumana/v2/4UaArE5TqRBjGj--TDf27o3M2po.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Sumana';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Sumana Bold'), local('Sumana-Bold'), url(https://fonts.gstatic.com/s/sumana/v2/4UaArE5TqRBjGj--TDf24I3M.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Sura';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sura'), local('Sura-Regular'), url(https://fonts.gstatic.com/s/sura/v2/SZc23FL5PbyzJfheWgXt.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Sura';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sura'), local('Sura-Regular'), url(https://fonts.gstatic.com/s/sura/v2/SZc23FL5PbyzJfdeWgXt.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Sura';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sura'), local('Sura-Regular'), url(https://fonts.gstatic.com/s/sura/v2/SZc23FL5PbyzJfleWg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Sura';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Sura Bold'), local('Sura-Bold'), url(https://fonts.gstatic.com/s/sura/v2/SZc53FL5PbyzLUJ7TzvMkHrS.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Sura';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Sura Bold'), local('Sura-Bold'), url(https://fonts.gstatic.com/s/sura/v2/SZc53FL5PbyzLUJ7TzTMkHrS.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Sura';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Sura Bold'), local('Sura-Bold'), url(https://fonts.gstatic.com/s/sura/v2/SZc53FL5PbyzLUJ7TzrMkA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* telugu */
+@font-face {
+  font-family: 'Suranna';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Suranna'), url(https://fonts.gstatic.com/s/suranna/v5/gokuH6ztGkFjWe58hA9TTlKm.woff2) format('woff2');
+  unicode-range: U+0951-0952, U+0964-0965, U+0C00-0C7F, U+1CDA, U+200C-200D, U+25CC;
+}
+/* latin */
+@font-face {
+  font-family: 'Suranna';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Suranna'), url(https://fonts.gstatic.com/s/suranna/v5/gokuH6ztGkFjWe58hBNTTg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* telugu */
+@font-face {
+  font-family: 'Suravaram';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Suravaram'), url(https://fonts.gstatic.com/s/suravaram/v4/_gP61R_usiY7SCym4xIwkGS0cv8.woff2) format('woff2');
+  unicode-range: U+0951-0952, U+0964-0965, U+0C00-0C7F, U+1CDA, U+200C-200D, U+25CC;
+}
+/* latin */
+@font-face {
+  font-family: 'Suravaram';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Suravaram'), url(https://fonts.gstatic.com/s/suravaram/v4/_gP61R_usiY7SCym4xIwjGS0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* khmer */
+@font-face {
+  font-family: 'Suwannaphum';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Suwannaphum Regular'), local('Suwannaphum-Regular'), url(https://fonts.gstatic.com/s/suwannaphum/v11/jAnCgHV7GtDvc8jbe8hXXLWp9cGEWg.woff2) format('woff2');
+  unicode-range: U+1780-17FF, U+200C, U+25CC;
+}
+/* latin */
+@font-face {
+  font-family: 'Tangerine';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Tangerine Regular'), local('Tangerine-Regular'), url(https://fonts.gstatic.com/s/tangerine/v9/IurY6Y5j_oScZZow4VOxCZZM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: 'Tangerine';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Tangerine Bold'), local('Tangerine-Bold'), url(https://fonts.gstatic.com/s/tangerine/v9/Iurd6Y5j_oScZZow4VO5srNZi5FN.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* khmer */
+@font-face {
+  font-family: 'Taprom';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Taprom'), url(https://fonts.gstatic.com/s/taprom/v9/UcCn3F82JHycULb1TyM2y0k.woff2) format('woff2');
+  unicode-range: U+1780-17FF, U+200C, U+25CC;
+}
+/* thai */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 100;
+  src: local('Taviraj Thin Italic'), local('Taviraj-ThinItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcdv8Cj3ylylTXzTOwTM_lipUmAog.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 100;
+  src: local('Taviraj Thin Italic'), local('Taviraj-ThinItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcdv8Cj3ylylTXzTOwTM_l5pUmAog.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 100;
+  src: local('Taviraj Thin Italic'), local('Taviraj-ThinItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcdv8Cj3ylylTXzTOwTM_l4pUmAog.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 100;
+  src: local('Taviraj Thin Italic'), local('Taviraj-ThinItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcdv8Cj3ylylTXzTOwTM_l2pUk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 200;
+  src: local('Taviraj ExtraLight Italic'), local('Taviraj-ExtraLightItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwTn-hhlmy9m0s.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 200;
+  src: local('Taviraj ExtraLight Italic'), local('Taviraj-ExtraLightItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwTn-hhjWy9m0s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 200;
+  src: local('Taviraj ExtraLight Italic'), local('Taviraj-ExtraLightItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwTn-hhjGy9m0s.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 200;
+  src: local('Taviraj ExtraLight Italic'), local('Taviraj-ExtraLightItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwTn-hhgmy9.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Taviraj Light Italic'), local('Taviraj-LightItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwT--thlmy9m0s.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Taviraj Light Italic'), local('Taviraj-LightItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwT--thjWy9m0s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Taviraj Light Italic'), local('Taviraj-LightItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwT--thjGy9m0s.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Taviraj Light Italic'), local('Taviraj-LightItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwT--thgmy9.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Taviraj Italic'), local('Taviraj-Italic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcbv8Cj3ylylTXzTOwbRMl0vU0.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Taviraj Italic'), local('Taviraj-Italic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcbv8Cj3ylylTXzTOwbX8l0vU0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Taviraj Italic'), local('Taviraj-Italic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcbv8Cj3ylylTXzTOwbXsl0vU0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Taviraj Italic'), local('Taviraj-Italic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcbv8Cj3ylylTXzTOwbUMl0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Taviraj Medium Italic'), local('Taviraj-MediumItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwTo-phlmy9m0s.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Taviraj Medium Italic'), local('Taviraj-MediumItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwTo-phjWy9m0s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Taviraj Medium Italic'), local('Taviraj-MediumItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwTo-phjGy9m0s.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Taviraj Medium Italic'), local('Taviraj-MediumItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwTo-phgmy9.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Taviraj SemiBold Italic'), local('Taviraj-SemiBoldItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwTj-1hlmy9m0s.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Taviraj SemiBold Italic'), local('Taviraj-SemiBoldItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwTj-1hjWy9m0s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Taviraj SemiBold Italic'), local('Taviraj-SemiBoldItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwTj-1hjGy9m0s.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Taviraj SemiBold Italic'), local('Taviraj-SemiBoldItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwTj-1hgmy9.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Taviraj Bold Italic'), local('Taviraj-BoldItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwT6-xhlmy9m0s.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Taviraj Bold Italic'), local('Taviraj-BoldItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwT6-xhjWy9m0s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Taviraj Bold Italic'), local('Taviraj-BoldItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwT6-xhjGy9m0s.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Taviraj Bold Italic'), local('Taviraj-BoldItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwT6-xhgmy9.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Taviraj ExtraBold Italic'), local('Taviraj-ExtraBoldItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwT9-9hlmy9m0s.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Taviraj ExtraBold Italic'), local('Taviraj-ExtraBoldItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwT9-9hjWy9m0s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Taviraj ExtraBold Italic'), local('Taviraj-ExtraBoldItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwT9-9hjGy9m0s.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Taviraj ExtraBold Italic'), local('Taviraj-ExtraBoldItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwT9-9hgmy9.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Taviraj Black Italic'), local('Taviraj-BlackItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwT0-5hlmy9m0s.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Taviraj Black Italic'), local('Taviraj-BlackItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwT0-5hjWy9m0s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Taviraj Black Italic'), local('Taviraj-BlackItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwT0-5hjGy9m0s.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Taviraj Black Italic'), local('Taviraj-BlackItalic'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcev8Cj3ylylTXzTOwT0-5hgmy9.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Taviraj Thin'), local('Taviraj-Thin'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcbv8Cj3ylylTXzRIobRMl0vU0.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Taviraj Thin'), local('Taviraj-Thin'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcbv8Cj3ylylTXzRIobX8l0vU0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Taviraj Thin'), local('Taviraj-Thin'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcbv8Cj3ylylTXzRIobXsl0vU0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Taviraj Thin'), local('Taviraj-Thin'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcbv8Cj3ylylTXzRIobUMl0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Taviraj ExtraLight'), local('Taviraj-ExtraLight'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRCYKR_pRgHS5.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Taviraj ExtraLight'), local('Taviraj-ExtraLight'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRCYKR-FRgHS5.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Taviraj ExtraLight'), local('Taviraj-ExtraLight'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRCYKR-BRgHS5.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Taviraj ExtraLight'), local('Taviraj-ExtraLight'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRCYKR-5RgA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Taviraj Light'), local('Taviraj-Light'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzREIJR_pRgHS5.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Taviraj Light'), local('Taviraj-Light'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzREIJR-FRgHS5.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Taviraj Light'), local('Taviraj-Light'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzREIJR-BRgHS5.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Taviraj Light'), local('Taviraj-Light'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzREIJR-5RgA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Taviraj Regular'), local('Taviraj-Regular'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcZv8Cj3ylylTXzTP0rUtFw.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Taviraj Regular'), local('Taviraj-Regular'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcZv8Cj3ylylTXzTOYrUtFw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Taviraj Regular'), local('Taviraj-Regular'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcZv8Cj3ylylTXzTOcrUtFw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Taviraj Regular'), local('Taviraj-Regular'), url(https://fonts.gstatic.com/s/taviraj/v3/ahcZv8Cj3ylylTXzTOkrUg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Taviraj Medium'), local('Taviraj-Medium'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRBoIR_pRgHS5.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Taviraj Medium'), local('Taviraj-Medium'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRBoIR-FRgHS5.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Taviraj Medium'), local('Taviraj-Medium'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRBoIR-BRgHS5.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Taviraj Medium'), local('Taviraj-Medium'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRBoIR-5RgA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Taviraj SemiBold'), local('Taviraj-SemiBold'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRDYPR_pRgHS5.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Taviraj SemiBold'), local('Taviraj-SemiBold'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRDYPR-FRgHS5.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Taviraj SemiBold'), local('Taviraj-SemiBold'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRDYPR-BRgHS5.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Taviraj SemiBold'), local('Taviraj-SemiBold'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRDYPR-5RgA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Taviraj Bold'), local('Taviraj-Bold'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRFIOR_pRgHS5.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Taviraj Bold'), local('Taviraj-Bold'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRFIOR-FRgHS5.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Taviraj Bold'), local('Taviraj-Bold'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRFIOR-BRgHS5.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Taviraj Bold'), local('Taviraj-Bold'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRFIOR-5RgA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Taviraj ExtraBold'), local('Taviraj-ExtraBold'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRE4NR_pRgHS5.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Taviraj ExtraBold'), local('Taviraj-ExtraBold'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRE4NR-FRgHS5.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Taviraj ExtraBold'), local('Taviraj-ExtraBold'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRE4NR-BRgHS5.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Taviraj ExtraBold'), local('Taviraj-ExtraBold'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRE4NR-5RgA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Taviraj Black'), local('Taviraj-Black'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRGoMR_pRgHS5.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Taviraj Black'), local('Taviraj-Black'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRGoMR-FRgHS5.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Taviraj Black'), local('Taviraj-Black'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRGoMR-BRgHS5.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Taviraj';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Taviraj Black'), local('Taviraj-Black'), url(https://fonts.gstatic.com/s/taviraj/v3/ahccv8Cj3ylylTXzRGoMR-5RgA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Teko Light'), local('Teko-Light'), url(https://fonts.gstatic.com/s/teko/v7/LYjCdG7kmE0gdQhfsCVgqGIu.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Teko Light'), local('Teko-Light'), url(https://fonts.gstatic.com/s/teko/v7/LYjCdG7kmE0gdQhfsCpgqGIu.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Teko Light'), local('Teko-Light'), url(https://fonts.gstatic.com/s/teko/v7/LYjCdG7kmE0gdQhfsCRgqA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Teko Regular'), local('Teko-Regular'), url(https://fonts.gstatic.com/s/teko/v7/LYjNdG7kmE0gfaJ9pRtB.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Teko Regular'), local('Teko-Regular'), url(https://fonts.gstatic.com/s/teko/v7/LYjNdG7kmE0gfa19pRtB.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Teko Regular'), local('Teko-Regular'), url(https://fonts.gstatic.com/s/teko/v7/LYjNdG7kmE0gfaN9pQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Teko Medium'), local('Teko-Medium'), url(https://fonts.gstatic.com/s/teko/v7/LYjCdG7kmE0gdVBesCVgqGIu.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Teko Medium'), local('Teko-Medium'), url(https://fonts.gstatic.com/s/teko/v7/LYjCdG7kmE0gdVBesCpgqGIu.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Teko Medium'), local('Teko-Medium'), url(https://fonts.gstatic.com/s/teko/v7/LYjCdG7kmE0gdVBesCRgqA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Teko SemiBold'), local('Teko-SemiBold'), url(https://fonts.gstatic.com/s/teko/v7/LYjCdG7kmE0gdXxZsCVgqGIu.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Teko SemiBold'), local('Teko-SemiBold'), url(https://fonts.gstatic.com/s/teko/v7/LYjCdG7kmE0gdXxZsCpgqGIu.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Teko SemiBold'), local('Teko-SemiBold'), url(https://fonts.gstatic.com/s/teko/v7/LYjCdG7kmE0gdXxZsCRgqA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Teko Bold'), local('Teko-Bold'), url(https://fonts.gstatic.com/s/teko/v7/LYjCdG7kmE0gdRhYsCVgqGIu.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Teko Bold'), local('Teko-Bold'), url(https://fonts.gstatic.com/s/teko/v7/LYjCdG7kmE0gdRhYsCpgqGIu.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Teko Bold'), local('Teko-Bold'), url(https://fonts.gstatic.com/s/teko/v7/LYjCdG7kmE0gdRhYsCRgqA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* telugu */
+@font-face {
+  font-family: 'Tenali Ramakrishna';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Tenali Ramakrishna'), local('TenaliRamakrishna'), url(https://fonts.gstatic.com/s/tenaliramakrishna/v4/raxgHj6Yt9gAN3LLKs0BZVMo8jmwn1-MM5_rYFE.woff2) format('woff2');
+  unicode-range: U+0951-0952, U+0964-0965, U+0C00-0C7F, U+1CDA, U+200C-200D, U+25CC;
+}
+/* latin */
+@font-face {
+  font-family: 'Tenali Ramakrishna';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Tenali Ramakrishna'), local('TenaliRamakrishna'), url(https://fonts.gstatic.com/s/tenaliramakrishna/v4/raxgHj6Yt9gAN3LLKs0BZVMo8jmwn1-ML5_r.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Tenor Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Tenor Sans'), local('TenorSans'), url(https://fonts.gstatic.com/s/tenorsans/v8/bx6ANxqUneKx06UkIXISn3F4Cl2I.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Tenor Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Tenor Sans'), local('TenorSans'), url(https://fonts.gstatic.com/s/tenorsans/v8/bx6ANxqUneKx06UkIXISn3t4Cl2I.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Tenor Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Tenor Sans'), local('TenorSans'), url(https://fonts.gstatic.com/s/tenorsans/v8/bx6ANxqUneKx06UkIXISn3V4Cg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Text Me One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Text Me One'), local('TextMeOne-Regular'), url(https://fonts.gstatic.com/s/textmeone/v5/i7dOIFdlayuLUvgoFvHQFVZVYFeCGg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Text Me One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Text Me One'), local('TextMeOne-Regular'), url(https://fonts.gstatic.com/s/textmeone/v5/i7dOIFdlayuLUvgoFvHQFVZbYFc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}

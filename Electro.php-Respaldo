@@ -1,0 +1,633 @@
+<?php
+  require_once('config/config.inc.php');
+  require_once('init.php');
+//$id_user=55;
+//  Context::getContext()->shop = Shop::initialize();
+/*
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+*/
+$id_user=Context::getContext()->customer->id;
+//phpinfo();
+/*
+$accion=99;
+if($accion==99)
+{
+    /*
+    //Example PHP array
+    $example = array(1, 2, 3);
+
+    //Encode $example array into a JSON string.
+    $exampleEncoded = json_encode($example);
+
+    //Insert the string into a column
+    $sql = "INSERT INTO foo (bar) VALUES ('$exampleEncoded')";
+     Db::getInstance()->execute($sql);
+     */
+     //Select the row, just like you would any other row.
+  /*
+        $sql = "SELECT bar FROM foo WHERE id = 1";
+
+        $u= Db::getInstance()->executeS($sql);
+
+        $x=$u[0];
+        print_r($x['bar']);
+        echo "xxxx";
+        //$result = $databaseObject->fetch($sql);
+         
+        //Decode the JSON string using json_decode.
+        $example = json_decode($x['bar'], true);
+         print_r($example);
+        //Do a var_dump, just to see the structure.
+        //var_dump($example);
+
+    return 0;
+
+    //etc
+}
+*/
+@$accion=$_POST['accion'];
+
+//reestablecer
+if($accion=="2")
+{
+
+    Db::getInstance()->execute("delete from e_user_data where id_user='$id_user' and status='0'");
+    echo '1';
+
+}
+
+//guardar especificaciones de armado
+if($accion=="1")
+{
+save_user_data($id_user,@$_POST['export_var'], $_POST['tipo_armado'], $_POST['tension_nominal'], $_POST['frecuencia'], $_POST['int_corto'], $_POST['norma_d'], $_POST['esquema_d'], $_POST['tension_m'], $_POST['borneos'], $_POST['entrada_c'], $_POST['fox1'], $_POST['fox2'], $_POST['fox3'], $_POST['fox4'], $_POST['fox5'], $_POST['fox6'], $_POST['fox7'], $_POST['fox8'], $_POST['fox9'], $_POST['fox10'], $_POST['fox11'], $_POST['fox12'] );
+    echo '1';
+
+}
+
+//guardar el esquema
+if($accion=="3")
+{
+    //guardo todo
+    save_user_data($id_user,@$_POST['export_var'], $_POST['tipo_armado'], $_POST['tension_nominal'], $_POST['frecuencia'], $_POST['int_corto'], $_POST['norma_d'], $_POST['esquema_d'], $_POST['tension_m'], $_POST['borneos'], $_POST['entrada_c'], $_POST['fox1'], $_POST['fox2'], $_POST['fox3'], $_POST['fox4'], $_POST['fox5'], $_POST['fox6'], $_POST['fox7'], $_POST['fox8'], $_POST['fox9'], $_POST['fox10'], $_POST['fox11'], $_POST['fox12'] );
+
+    $user_data = get_user_data($id_user);
+    $id_user_data=$user_data['id_user_data'];
+    $nombre = $_POST['nombre'];
+    //paso a 1 el status
+    //echo "update e_user_data set status='1' where id_user_data='$id_user_data'";
+    Db::getInstance()->execute("update e_user_data set nombre = '$nombre', status='1' where id_user_data='$id_user_data'");
+    echo '1';    
+
+
+}
+
+//cargar esquema
+if($accion=="4")
+{
+    $dir = str_replace('Electro.php', '',  $_SERVER['SCRIPT_FILENAME']);
+    $fichero = $dir."xml/data.xml";
+
+    //buscar las pages y colocarlo al cargar
+    
+    $user_data = get_user_data_id($_POST['id_user_data']);
+    $esquema=$user_data['circuito'];
+    //GUARDO EN EL XML
+    file_put_contents($fichero, $esquema);
+    echo $fichero;
+
+
+}
+
+
+//recibe el xml y retorna el valor de los borneos
+if($accion=="5")
+{
+
+    //$xml=$_POST['xml'];
+    $l1[0]=$l2[0]=$l3[0]=0;
+    $borneos_var="";
+    $circuito = $_POST['xml'];  
+
+    if($circuito)
+    {
+            foreach ($circuito as $key => $value) {
+                if($value!="")
+                {
+                    //echo $value;
+                    $xml = new SimpleXMLElement($value);
+                    $items_iterator = clone $xml;
+                    $num=0;
+                   // print_r($items_iterator);
+                    foreach ($items_iterator->root->mxCell as $xx) {
+                       // print_r($xx);
+                        $id_p=$xx['id'];
+                        $parent_p=$xx['parent'];
+                        $value_p=$xx['value'];
+                        $c=explode('-', $id_p);
+                        if(@$c[1]!="")
+                        {
+                            //echo "x4";
+                            //veo si es borneo
+                            if( (@$c[0]=="b1")||(@$c[0]=="b2")||(@$c[0]=="b3")||(@$c[0]=="b4")||(@$c[0]=="b5") )
+                            {
+                                
+                               // echo "x8";
+                                //le quito el -X, -P y -W a los value
+                                $value=str_replace('-X', '', $value_p);
+                                $value=str_replace('-P', '', $value);
+                                $value=str_replace('-W', '', $value);
+
+                                if(@$c[0]=="b1"){$l1[]=$value;} //-X1
+                                if(@$c[0]=="b2"){$l2[]=$value;} //-P1
+                                if(@$c[0]=="b3"){$l3[]=$value;} //-W1
+                                if(@$c[0]=="b4"){} //RZ4-K 5G6
+                                if(@$c[0]=="b5"){} //Salida
+                            }
+                        }
+                    }
+
+                }
+            }
+
+    }
+
+
+        
+    $res[0]=max($l1);
+    $res[1]=max($l2);
+    $res[2]=max($l3);
+    echo json_encode($res);
+    //echo $res;
+}
+
+//recibe el xml y retorna el valor de los interruptores
+if($accion=="7")
+{
+
+    //$xml=$_POST['xml'];
+    $l1[0]=$l2[0]=$l3[0]=0;
+    $borneos_var="";
+    $circuito = $_POST['xml'];  
+
+    if($circuito)
+    {
+            foreach ($circuito as $key => $value) {
+                if($value!="")
+                {
+                    //echo $value;
+                    $xml = new SimpleXMLElement($value);
+                    $items_iterator = clone $xml;
+                    $num=0;
+                   // print_r($items_iterator);
+                    foreach ($items_iterator->root->mxCell as $xx) {
+                       // print_r($xx);
+                        $id_p=$xx['id'];
+                        $parent_p=$xx['parent'];
+                        $value_p=$xx['value'];
+                        $c=explode('-', $id_p);
+                        if(@$c[1]!="")
+                        {
+                            //echo "x4";
+                            //veo si es un interruptor
+                            if( (@$c[0]=="i1")||(@$c[0]=="i2")||(@$c[0]=="i3")||(@$c[0]=="i4")||(@$c[0]=="i5") )
+                            {
+                                
+                               // echo "x8";
+                                //le quito el -X, -P y -W a los value
+                                $value=str_replace('-Q', '', $value_p);
+                                $value=str_replace('-P', '', $value);
+                                $value=str_replace('-W', '', $value);
+
+                                if(@$c[0]=="i1"){$l1[]=$value;} //-Q1
+                                if(@$c[0]=="i2"){$l2[]=$value;} //63A
+                                if(@$c[0]=="i3"){$l3[]=$value;} //Curva C
+                                if(@$c[0]=="i4"){} //6KA
+                                if(@$c[0]=="i5"){} //General
+                            }
+                        }
+                    }
+
+                }
+            }
+
+    }
+
+
+        
+    $res[0]=max($l1);
+    $res[1]=max($l2);
+    $res[2]=max($l3);
+    echo json_encode($res);
+    //echo $res;
+}
+
+//recibe el xml y lo coloca en el xml
+if($accion=="6")
+{
+    $dir = str_replace('Electro.php', '',  $_SERVER['SCRIPT_FILENAME']);
+    $fichero = $dir."xml/data.xml";
+    $esquema=$_POST['xml'];
+    //GUARDO EN EL XML
+    file_put_contents($fichero, $esquema);
+    echo $fichero;
+}
+
+
+//VALIDA LAS PIEZAS DENTRO DEL ESQUEMA, PARA QUE NO COLOQUEN 2 EN EL MISMO LUGAR
+if($accion=="8")
+{
+    //ancho y alto de las piezas para hacer el calculo
+    $width=$height=0;
+    $circuito = $_POST['xml'];  
+    //mensaje de error
+    $mError="";
+    //valida que este en la misma posicion de otra pieza
+    $vMismaPosicion=0;
+    //array con los elementos del grid
+    $grid = [];
+    //array de las conexiones
+    $con_l=$con_r=$con_u=$con_d=[];
+    if($circuito)
+    {
+            foreach ($circuito as $key => $value) {
+                if($value!="")
+                {
+                    $xml = new SimpleXMLElement($value);
+                    $items_iterator = clone $xml;
+                    $num=0;
+                    //print_r($items_iterator);
+                    //CARGO EL GRID Y VALIDO QUE NO TENGA 2 PIEZAS EN EL MISMO LUGAR
+                    foreach ($items_iterator->root->mxCell as $pieza) {
+                        $parent_p=$pieza['parent'];
+                        //if(@$parent_p=="1")
+                        //{
+                        //inicializar las coordenadas    
+                        $x=$y=0;    
+                        $geometry=$pieza->mxGeometry;    
+                        //print_r($pieza);
+                        $id_p=$pieza['id'];
+                        $value_p=$pieza['value'];
+                        //si es parent 1 es una pieza como tal, de los contrario son vertex dentro de la pieza, pasa con borneros e interruptores
+                        if(@$parent_p=="1")
+                        {
+
+                        $page_p=$pieza['page'];
+                        $conexion_p=explode('*', $pieza['conexiones']);
+                        $bornero = $pieza['bornero'];
+
+                        $xG = $geometry['x'];
+                        $yG = $geometry['y'];
+                        
+                        $c=explode('-', $id_p);
+                        $numPage=0;
+                        if($page_p>1)
+                            $numPage=($page_p-1)*7;
+   
+                        //si no se ha sacado el ancho y alto de la pieza, se busca
+                        //esto es para hacer el calculo de donde esta 
+                        if($width==0)
+                        {
+                        $height = $geometry['height'];
+                        $width = $geometry['width'];
+
+                        //si es bornero la pieza es mas grande, se debe dividir entre 2 para que tome bien
+                            if($bornero)
+                            {
+                                $height=$height/2;
+                            }
+                        }
+                        if($xG=="")
+                            $xG=0;
+                        if($yG=="")
+                            $yG=0;
+
+                        //saco la X,Y de la pieza en el grid
+                        $lastX=$x=intval($xG/$width)+$numPage;
+                        $lastY=$y=intval($yG/$height);
+
+                            //veo si ya existe un elemento aqui
+                            if($grid[$x][$y]=="")
+                            {
+                                //$grid[$x][$y]=$x;
+                            }else
+                            {
+                                $vMismaPosicion=1;
+                                //$mError="\n Ya existe una pieza en este lugar [$x][$y] Page: $numPage / ID:".strval($id_p);
+                                $mError="\n Ya existe una pieza en este lugar";
+                            }
+                            
+                            //$grid[$x][$y]=$pieza;
+                            $grid[$x][$y]=array(
+                                'x' => $x , 
+                                'y'=>$y, 
+                                'id'=>strval($id_p)
+                            );
+                            
+
+                            //cargo las conexiones
+                            $con_u[$x][$y]=$conexion_p[0]; //arriba
+                            $con_r[$x][$y]=$conexion_p[1]; //derecha
+                            $con_d[$x][$y]=$conexion_p[2]; //abajo
+                            $con_l[$x][$y]=$conexion_p[3]; //izquierda
+
+
+                            //echo "**** pieza / page: $page_p / conexion: $conexion_p / width:$width / height:$height /x:$x /y:$y ";
+                        }else{
+                            //veo si viene de un interruptor
+                            $c=explode('-', $id_p);
+                            if(@$c[1]!="")
+                            {
+                                
+                                //es un interruptor, I2 es el que interesa ya que da Intensidad nominal (o calibre)
+                                if( (@$c[0]=="i2") )
+                                {
+                                    //x, y vienen del que se cargo antes en el parent, que es la pieza como tal
+                                    $calibre = explode(' ', $value_p);
+                                    $interruptor[$lastX][$lastY]=$calibre[0];
+                                    //echo "\n interruptor --> [$lastX][$lastY]=".$calibre[0];
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+    //valido que las piezas tenga el numero de conexiones
+    $vConexiones = validar_conexiones($con_u, $con_r, $con_d, $con_l,$grid) ?  true : false;
+    //valido los interruptores
+    $vInterruptores = validar_interruptores($interruptor, $grid) ?  true : false;
+
+    }
+    //print_r($grid);
+    $res[0]=$vMismaPosicion;
+    //$res[1]=$mError;
+    $res[1]=$vConexiones; 
+    $res[2]=$vInterruptores;
+
+    echo json_encode($res);
+}
+
+//la Intensidad nominal (o calibre). debe ser menor o igual al que este por arriba de el
+function validar_interruptores($interruptor, $grid)
+{
+
+    //print_r($interruptor);
+    $currentPage=0;
+    //10 seria el numero maximo de paginas
+    while ($currentPage <= 3) {
+        //8 filas
+        for($x=0; $x<8; $x++)
+        {
+        //se coloca esto para que busque en todas las paginas
+        
+        $xx=$x+(7*$currentPage);
+
+         //7 columnas
+         for($y=0; $y<7; $y++)   
+         {
+            //QUEDE AQUI
+            //valido
+            if($interruptor[$xx][$y])
+            {
+                //echo "xxxx--> [$xx][$y] : ".$interruptor[$xx][$y];
+                //veo si es menor o igual a los que estan por arriba
+                $idPieza=$grid[$xx][$y]['id'];
+                foreach ($interruptor as $key => $value) {
+                    $int=$value;
+                    //saco la coordenada Y y el Calibre
+                    foreach ($int as $corY => $calibre) {
+                       // echo "\n Y=$y / $corY --> ".$interruptor[$xx][$y].">".$calibre;
+                        //veo si es menor o igual a los que estan por arriba
+                        if( ($corY<=$y) && ($interruptor[$xx][$y]>$calibre))
+                        {
+                            $errorArray[] = $idPieza;
+                            //$error = "Error, la intensidad(calibre) del interruptor no puede ser mayor a ".
+                        }
+                    }
+                }
+            }
+            //echo "\n interruptor[$xx][$y] --> ".$interruptor[$xx][$y];
+         }
+        }
+        $currentPage++;
+
+    }
+    //print_r($errorArray);
+    return $errorArray;
+
+}
+
+
+//$con_u conexion de arriba
+//$con_d conexion de abajo
+//$con_l conexion de izquierda
+//$con_r conexion de derecha
+function validar_conexiones($con_u, $con_r, $con_d, $con_l,$grid)
+{
+    //print_r($grid);
+    $currentPage=0;
+    //10 seria el numero maximo de paginas
+    while ($currentPage <= 10) {
+        //8 filas
+        for($x=0; $x<8; $x++)
+        {
+         //7 columnas
+         for($y=0; $y<7; $y++)   
+         {
+            //se coloca esto para que busque en todas las paginas
+            $xx=$x+(7*$currentPage);
+            //$yy=$y*$currentPage;
+            $yy=$y;
+            $idPieza=$grid[$xx][$yy]['id'];
+            //echo "aqui va --> ".$idPieza;
+            //hay un elemento, valido el numero de conexiones
+            if($idPieza!="")
+            {
+                //echo "\n encontro a [$xx][$yy]";
+                //Arriba
+                if( ($con_u[$xx][$yy]!="")&&($con_d[$xx][$yy-1]!="") && ($con_u[$xx][$yy]!=$con_d[$xx][$yy-1]))
+                    $errorArray[] = $idPieza."*U";     
+                //Derecha
+                //echo "\n".$con_r[$xx][$yy]."!=".$con_l[$xx+1][$yy];
+                if( ($con_r[$xx][$yy]!="")&&($con_l[$xx+1][$yy]!="") && ($con_r[$xx][$yy]!=$con_l[$xx+1][$yy]))
+                    $errorArray[] = $idPieza."*R";
+                //Abajo
+                if( ($con_d[$xx][$yy]!="")&&($con_u[$xx][$yy+1]!="") && ($con_d[$xx][$yy]!=$con_u[$xx][$yy+1]))
+                    $errorArray[] = $idPieza."*D";     
+                //Izquierda
+                if( ($con_l[$xx][$yy]!="")&&($con_r[$xx-1][$yy]!="") && ($con_l[$xx][$yy]!=$con_r[$xx-1][$yy]))
+                    $errorArray[] = $idPieza."*L";     
+
+            }
+         }
+        }
+        $currentPage++;
+
+    }
+    //print_r($errorArray);
+    return $errorArray;
+}
+
+
+/*
+//valida a la derecha
+function validarConexionLados($con, $x, $y, $type, $idPieza)
+{
+    if( ($type=="right") && ($con[$xx][$yy]!=$con[$xx+1][$yy])
+        return $idPieza."*R";
+    if( ($type=="left") && ($con[$xx][$yy]!=$con[$xx-1][$yy])
+        return $idPieza."*L";
+    if( ($type=="down") && ($con[$xx][$yy]!=$con[$xx][$yy+1])
+        return $idPieza."*D";
+    if( ($type=="up") && ($con[$xx][$yy]!=$con[$xx][$yy-1])
+        return $idPieza."*U";
+
+    return '';    
+}
+*/
+
+//VALIDA TODO EL ESQUEMA
+if($accion=="9")
+{
+
+    $circuito = $_POST['xml'];  
+    //mensaje de error
+    $mError="";
+    //valido
+    $valido=1;
+    //array con los elementos del grid
+    $grid = [];
+    if($circuito)
+    {
+            foreach ($circuito as $key => $value) {
+                if($value!="")
+                {
+                    $xml = new SimpleXMLElement($value);
+                    $items_iterator = clone $xml;
+                    $num=0;
+                    //print_r($items_iterator);
+                    foreach ($items_iterator->root->mxCell as $pieza) {
+                        $parent_p=$pieza['parent'];
+                        if(@$parent_p=="1")
+                        {
+                        //inicializar las coordenadas    
+                        $x=$y=0;    
+                        $geometry=$pieza->mxGeometry;    
+                        //print_r($pieza);
+                        $id_p=$pieza['id'];
+                        $page_p=$pieza['page'];
+                        $conexion_p=$pieza['conexiones'];
+                        $width = $geometry['width'];
+                        $height = $geometry['height'];
+                        $xG = $geometry['x'];
+                        $yG = $geometry['y'];
+                        $value_p=$pieza['value'];
+                        $c=explode('-', $id_p);
+                        $numPage=0;
+                        if($page_p>1)
+                            $numPage=($page_p-1)*8;
+                        //saco la X,Y de la pieza en el grid
+                        if($xG>0)
+                            $x=intval($xG/$width)+$numPage;
+                        if($yG>0)
+                            $y=intval($yG/$height)+$numPage;
+                        
+                        //veo si ya existe un elemento aqui
+                        if($grid[$x][$y]=="")
+                            $grid[$x][$y]=$x;
+                        else
+                        {
+                            $valido=0;
+                            $mError="Ya existe una pieza en este lugar";
+                        }
+                        //echo "**** pieza / page: $page_p / conexion: $conexion_p / width:$width / height:$height /x:$x /y:$y ";
+                        }
+                    }
+
+                }
+            }
+
+    }
+
+
+                            //print_r($grid);
+
+    $res[0]=$valido;
+    $res[1]=$mError;
+    echo json_encode($res);
+    
+}
+
+
+function save_user_data($id_user, $circuito, $tipo_armado,$tension_nominal,$frecuencia,$int_corto,$norma_d,$esquema_d,$tension_m,$borneos,$entrada_c,$fox1,$fox2,$fox3,$fox4,$fox5,$fox6,$fox7,$fox8,$fox9,$fox10,$fox11,$fox12)
+{
+
+    $u= Db::getInstance()->executeS('
+    SELECT *
+    FROM e_user_data
+    where id_user='.$id_user." and status=0");
+    $x=@$u[0];
+    $id=$x['id_user_data'];
+
+    //borro en las dos tablas
+    $u= Db::getInstance()->execute(" delete from e_user_data where id_user_data='$id'");
+    $u= Db::getInstance()->execute(" delete from e_user_circuito where id_user_data='$id'");
+    
+    //$circuito=str_replace('<mxGraphModel>', '', $circuito);
+    //$circuito=str_replace('</mxGraphModel>', '', $circuito);
+//    $circuito = json_encode($circuito);
+
+    Db::getInstance()->execute("
+    insert into e_user_data( `id_user`, `tipo_armado`, `tension_nominal`, `frecuencia`, `int_corto`, `norma_d`, `esquema_d`, `tension_m`, `borneos`, `entrada_c`, `fox1`, `fox2`, `fox3`, `fox4`, `fox5`, `fox6`, `fox7`, `fox8`, `fox9`, `fox10`, `fox11`, `fox12`)values('$id_user', '$tipo_armado','$tension_nominal','$frecuencia','$int_corto','$norma_d','$esquema_d','$tension_m','$borneos','$entrada_c','$fox1','$fox2','$fox3','$fox4','$fox5','$fox6','$fox7','$fox8','$fox9','$fox10','$fox11','$fox12' )");
+
+    //busco el que se inserto
+    $u= Db::getInstance()->executeS('
+    SELECT *
+    FROM e_user_data
+    where id_user='.$id_user." and status=0");
+
+    $x=@$u[0];
+    $id=$x['id_user_data'];
+    if($circuito)
+    {
+            foreach ($circuito as $key => $value) {
+                if($value!="")
+                {
+                    $ins="insert into e_user_circuito(id_user_data, circuito)values('$id', '$value')";
+                    Db::getInstance()->execute($ins);
+
+                    $ins="update e_user_data set has_circuito='1' where id_user_data='$id'";
+                    Db::getInstance()->execute($ins);
+                }
+            }
+
+    }
+
+    echo '1';
+}
+
+
+function get_user_data($id_user)
+{
+
+    $u= Db::getInstance()->executeS('
+    SELECT *
+    FROM e_user_data
+    where id_user='.$id_user." order by id_user_data desc");
+
+    return @$u[0];
+}
+
+
+function get_user_data_id($id_user_data)
+{
+
+    $u= Db::getInstance()->executeS('
+    SELECT *
+    FROM e_user_data
+    where id_user_data='.$id_user_data." ");
+
+    return @$u[0];
+}

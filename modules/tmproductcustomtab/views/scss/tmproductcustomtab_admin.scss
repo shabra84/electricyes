@@ -1,0 +1,146 @@
+/**
+* 2002-2017 TemplateMonster
+*
+* TM Product Custom Tab
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the General Public License (GPL 2.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/GPL-2.0
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade the module to newer
+* versions in the future.
+*
+*  @author    TemplateMonster
+*  @copyright 2002-2017 TemplateMonster
+*  @license   http://opensource.org/licenses/GPL-2.0 General Public License (GPL 2.0)
+*/
+
+.tab-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  .tab-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px 20px;
+    margin-bottom: 5px;
+    background: #fff;
+    .remove_item {
+      background: #fd0063;
+      border-color: #fd0063;
+      &:hover {
+        background: #cd0151;
+        border-color: #cd0151;
+      }
+    }
+    .update_item{
+      margin-bottom: 30px;
+    }
+    &:hover {
+      cursor: move;
+    }
+  }
+}
+
+.add_item {
+  margin-bottom: 30px;
+}
+
+#selected_products {
+  overflow: hidden;
+  .ui-sortable-placeholder {
+    float: left;
+  }
+  .product {
+    position: relative;
+    float: left;
+    min-height: 150px;
+    width: 100px;
+    margin: 10px;
+    .remove-product {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+  }
+}
+
+.fancybox-inner {
+  .footer-buttons {
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    overflow: hidden;
+    clear: both
+  }
+  .content {
+    padding: 10px;
+  }
+  .search {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+    input {
+      width: 100%;
+    }
+    .clear_serach {
+      position: absolute;
+      right: 10px;
+      top:10px;
+      z-index: 1;
+    }
+  }
+  .pull-left{
+    margin-right: 5px;
+  }
+  .product {
+    position: relative;
+    float: left;
+    min-height: 150px;
+    width: 100px;
+    margin: 10px;
+    .remove-product {
+      display: none;
+    }
+    &.active:before {
+      position: absolute;
+      content: "\f046";
+      font-family: FontAwesome;
+      color: green;
+      right: 5px;
+      font-size: 20px;
+    }
+  }
+}
+
+#manage-products {
+  display: block;
+  clear: both;
+}
+
+#manage-products-remove {
+  margin-left: 10px;
+}
+
+.tmproductcustomtab_category_tree .tree-panel-heading-controls .tree-panel-label-title {
+  display: none;
+}
+
+.bootstrap .tmproductcustomtab > tbody  tr.ui-sortable-helper td {
+  color:#fff !important;
+  right: 0!important;
+  background-color:#00aff0 !important;
+  -moz-transform:translate(5px, 10px);
+  -ms-transform:translate(5px, 10px);
+  -webkit-transform:translate(5px, 10px);
+  transform:translate(5px, 10px)
+}
+
+.ui-sortable-helper {
+  display: table;
+}

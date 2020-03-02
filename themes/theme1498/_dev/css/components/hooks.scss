@@ -1,0 +1,198 @@
+#tmhtmlcontent_topColumn {
+  > ul {
+    margin: 0 -5px;
+    > li {
+      padding: 10px 5px 0;
+    }
+    @include media-breakpoint-down(sm) {
+      margin: 0 -2px;
+      > li {
+        padding: 4px 2px 0;
+      }
+    }
+  }
+  .bannerBox {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background: #000;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.4s linear;
+    margin: 0 auto;
+    opacity: 1;
+  }
+  a:hover {
+    img {
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
+  }
+  .item-html {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    z-index: 5;
+    transition: all 0.5s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .banner-decor {
+      position: absolute;
+      &.left_top {
+        bottom: 18%;
+        left: 10%;
+      }
+      &.right_bottom {
+        top: 19%;
+        right: 16%;
+      }
+      &.right_top {
+        bottom: 28%;
+        right: -8%;
+      }
+      &.left_bottom {
+        top: 18%;
+        left: 0;
+      }
+    }
+    img.slider-logo {
+      @media (max-width: 1599px) {
+        max-width: 70px;
+      }
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
+    h2 {
+      font: bold 23px / 27px $font-family-base;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 0 10px;
+      color: white;
+      span {
+        font: 300 11px / 18px $font-family-base;
+        letter-spacing: 0.1em;
+        display: block;
+      }
+      @media (min-width: 1600px) {
+        font: bold 35px / 45px $font-family-base;
+        margin: 0 0 22px;
+        strong {
+          font: 300 13px / 33px $font-family-base;
+          letter-spacing: 0.32em;
+        }
+      }
+      @media (min-width: 1200px) and (max-width: 1599px) {
+        font: bold 28px / 33px $font-family-base;
+        margin: 0 0 15px;
+        strong {
+          font: 300 12px / 25px $font-family-base;
+          letter-spacing: 0.15em;
+        }
+      }
+    }
+  }
+}
+
+#tmhtmlcontent_home {
+  padding: 60px 0 69px;
+  margin-bottom: 10px;
+}
+
+#tmhtmlcontent_home > .container {
+  padding: 0;
+}
+
+#tmhtmlcontent_home ul {
+  margin: 0;
+}
+
+#tmhtmlcontent_home ul li {
+  width: 100%;
+}
+
+#tmhtmlcontent_home ul li .item-html {
+  color: #fff;
+}
+
+#tmhtmlcontent_home ul li .item-html #testimonials li {
+  font: bold 16px/28px "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 30px 47px;
+}
+
+@media (max-width: 479px) {
+  #tmhtmlcontent_home ul li .item-html #testimonials li {
+    font: normal 13px/22px "Ubuntu", sans-serif;
+  }
+}
+
+#tmhtmlcontent_home ul li .item-html #testimonials li:before {
+  font-size: 84px;
+  line-height: 1em;
+  margin: 0 0 38px;
+  display: block;
+  text-align: center;
+}
+
+#tmhtmlcontent_home ul li .item-html #testimonials li h3 {
+  font: bold 20px/28px "Ubuntu", sans-serif;
+  color: white;
+}
+
+#tmhtmlcontent_home ul li .item-html #testimonials li p {
+  margin-bottom: 34px;
+}
+
+#tmhtmlcontent_home ul li .item-html .bx-wrapper .bx-controls-direction a {
+  font-size: 0;
+  height: 30px;
+  line-height: 0;
+  margin-top: 0;
+  top: auto;
+  bottom: 0;
+  width: auto;
+  left: 50%;
+  margin-left: -40px;
+  text-align: center;
+}
+
+#tmhtmlcontent_home ul li .item-html .bx-wrapper .bx-controls-direction a:before {
+  color: #fff;
+}
+
+#tmhtmlcontent_home ul li .item-html .bx-wrapper .bx-controls-direction a.bx-next {
+  left: auto;
+  margin-left: 0;
+  right: 50%;
+  margin-right: -40px;
+}
+
+#tmhtmlcontent_home ul li .item-html .bx-wrapper .bx-controls-direction a:hover:before {
+  color: #333333;
+}
+
+@media (max-width: 687px) {
+  #tmhtmlcontent_home ul li .item-html #testimonials li {
+    font: normal 11px/19px "Ubuntu", sans-serif;
+    padding: 5px 0 47px;
+  }
+  #tmhtmlcontent_home ul li .item-html #testimonials li:before {
+    font-size: 54px;
+    margin: 0 0 28px;
+  }
+  #tmhtmlcontent_home ul li .item-html #testimonials li h3 {
+    font: bold 16px/22px "Ubuntu", sans-serif;
+  }
+  #tmhtmlcontent_home ul li .item-html #testimonials li p {
+    margin-bottom: 24px;
+  }
+}

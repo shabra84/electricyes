@@ -1,0 +1,94 @@
+//font variables
+$UbuntuFontsPath: '~ubuntu-fontface/fonts';
+$font-family-base: 'Ubuntu', sans-serif;
+
+//font size variables
+$base-font-size: 1rem;
+$font-size-lg: 0.9375rem;
+$font-size-sm: 0.875rem;
+$font-size-xs: 0.8125rem;
+$display1-size: 45px;
+$display1-weight: 600;
+$display2-size: 45px;
+$display2-weight: 600;
+$display3-size: 1.563rem;
+$display3-weight: 400;
+$display4-size: 1.25rem;
+$display4-weight: 400;
+
+//color variables
+$gray: #888888;
+$gray-light: #bdbdbd;
+$gray-lighter: #e9e9e9;
+$gray-lightest: #f1f1f1;
+$gray-dark: #2c303a;
+$gray-darker: #333333;
+$gray-darkest: #14161c;
+$brand-primary: #c78c68;
+$brand-secondary: #0579fc;
+$brand-success: #1cc97e;
+$brand-warning: #ff138c;
+$brand-danger: #ffb400;
+$text-muted: $gray;
+
+//heading variables
+$font-size-h1: 36px;
+$font-size-h2: 26px;
+$font-size-h3: 20px;
+$font-size-h4: 20px;
+$font-size-h5: 16px;
+$font-size-h6: 14px;
+$headings-margin-bottom: 20px;
+$headings-font-family: $font-family-base;
+$headings-font-weight: 600;
+$headings-line-height: 1.3;
+$headings-color: $gray-darkest;
+
+$warning: #FF9A52;
+$warning-hover: #FDE7BB;
+$alert-warning-bg: rgba(255,154,82,0.3);
+$alert-warning-border: $warning;
+$alert-warning-text: $gray-darker;
+
+$label-color: $gray-darker;
+$input-border-color: #3c3c3c;
+$input-btn-border-width: 1px;
+$input-border-focus: $brand-secondary;
+$input-color-focus: $brand-secondary;
+$input-height: 3.25rem;
+$input-bg-disabled: lighten($gray-lightest, 4);
+
+//button variables
+$btn-line-height: 1.6;
+$btn-font-weight: bold;
+$btn-border-radius: 0;
+
+$btn-primary-color: white;
+$btn-primary-bg: $gray-dark;
+
+$btn-secondary-color: white;
+$btn-secondary-bg: $brand-secondary;
+
+$btn-padding-y-lg: 20px;
+$btn-padding-x-lg: 30px;
+$font-size-lg: $base-font-size;
+$btn-border-radius-lg: 0;
+
+$btn-padding-y: 14px;
+$btn-padding-x: 20px;
+$btn-line-height: 1.4;
+$btn-border-radius: 0;
+
+$btn-padding-y-sm: 5px;
+$btn-padding-x-sm: 10px;
+$font-size-sm: $font-size-sm;
+$btn-border-radius-sm: 0;
+
+//other variables
+$tooltip-bg: $brand-danger;
+$border-radius: 0;
+$extra-small-space: 5px;
+$small-space: 10px;
+$medium-space: 20px;
+$large-space: 30px;
+$extra-large-space: 50px;

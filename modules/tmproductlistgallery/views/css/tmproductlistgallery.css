@@ -1,0 +1,111 @@
+/* Main styles*/
+
+.products .product-thumbnail {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	outline: none !important;
+}
+.products .product-thumbnail img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	background: #ffffff;
+}
+
+.products .product-thumbnail img.img-responsive {
+	display: block;
+	max-width: 100%;
+}
+
+.products .product-thumbnail img:first-child {
+	position: relative;
+	opacity: 1;
+}
+
+/* Slideshow */
+
+.products .product-thumbnail .slideshow-pager {
+	position: absolute;
+	left: 0;
+	bottom: 35px;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+}
+.products .product-thumbnail .slideshow-pager em {
+	opacity: 0.9;
+	background: #fff;
+	margin: 0 2px;
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	cursor: pointer;
+	overflow: hidden;
+	display: inline-block;
+	box-shadow: 0 1px 2px #000;
+	text-indent: -5555px;
+}
+.products .product-thumbnail:not(.active) .slideshow-pager em:first-child, .products .product-thumbnail.active .slideshow-pager em.current {
+	background: #2e9419;
+}
+.products .product-thumbnail .slideshow-controls {
+	margin: 0;
+}
+.products .product-thumbnail .prev, .products .product-thumbnail .next {
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	font: normal 19px/30px "FontAwesome";
+	width: 30px;
+	background: #000000;
+	color: #ffffff;
+	text-align: center;
+	transform: translateY(-50%);
+	opacity: 0.5;
+}
+.products .product-thumbnail .prev:hover, .products .product-thumbnail .next:hover {
+	opacity: 1;
+}
+.products .product-thumbnail .next {
+	left: auto;
+	right: 10px;
+}
+.products .product-thumbnail .prev:before {
+	content: '\f053';
+}
+.products .product-thumbnail .next:before {
+	content: '\f054';
+}
+
+/* Gallery */
+.gallery-wrapper {
+	position: relative;
+	overflow: hidden;
+	margin: 0 -5px 35px;
+}
+.gallery-thumb-list {
+	width: 100%;
+	position: relative;
+}
+.gallery-thumb-list li {
+	float: left;
+}
+.products .product-thumbnail .gallery-thumb-list li.clone-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.gallery-thumb-list li span {
+	position: relative;
+	display: block;
+	padding: 5px;
+}
+.gallery-thumb-list li span img {
+	display: block;
+	border: 1px solid #CCCCCC;
+}
+.gallery-thumb-list li.active span img {
+	border-color:#333;
+}
